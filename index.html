@@ -110,19 +110,16 @@
     }
     var clickCount = 0;
 
-// 当页面加载完成后，为页面添加点击事件监听器
     document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('click', handleClick);
     });
 
-// 点击事件处理函数
     function handleClick() {
-    // 每次点击增加点击次数
         clickCount++;
 
 
         if (clickCount >= 4) {
-            window.location.href = 'https://hikarifield.co.jp/sothewitch/'; // 这里替换成你想要跳转的网站
+            window.location.href = 'https://hikarifield.co.jp/sothewitch/'; 
         }
     }
 </script>
