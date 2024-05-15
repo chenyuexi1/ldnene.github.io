@@ -8,6 +8,13 @@ body {
 .nav {
     background-color: rgb(197, 44, 10);
     text-align: center;
+    height: 54px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    transition: top 0.3s;
 }
 /* 导航链接样式 */
 .nav a {
@@ -27,8 +34,8 @@ body {
 /* 导航栏 logo 样式 */
 .nav .headerlogo {
     font: 2em serif;
-    line-height: 25px;
-    height: 25px;
+    line-height: 24px;
+    height: 24px;
     width: 80px;
     border-radius: 40%;
     position: absolute;
@@ -47,6 +54,7 @@ body {
 .homepage {
     background-image: url("./image/main_bg_pc.jpg");
     background-size: cover;
+    margin-top: 54px;
     height: 100vh;
     position: relative;
 }
@@ -88,7 +96,6 @@ body {
     background-size      : 150%;
     background-position  : center;
     margin-top           : -32px;
-    height               : 200vh;
     width                : auto;
     position             : relative;
     animation            : shrinkBackground 40s infinite alternate;/* 背景大小动画，40秒循环播放 */
